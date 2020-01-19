@@ -59,6 +59,12 @@
   .dropdown:hover > .dropdown-content {
     display: block;
   }
+  .header-content h1 {
+    font-size: 42px;
+  }
+  .header-content p {
+    font-size: 22px;
+  }
   .responsive {
     float: right;
     padding-top: 15px;
