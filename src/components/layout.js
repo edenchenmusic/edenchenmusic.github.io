@@ -7,17 +7,36 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { GlobalStyles, theme } from "../theme/GlobalStyles"
 
-import Header from "./header"
+import Navbar from "./navbar"
+import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Container = styled.div`
+  margin: 0;
+  /* max-width: ${theme.largeDesktop}; */
+  padding: 0 0 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+`
+
+const Layout = (props) => {
+  const children = props.children
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+          menuLinks {
+            title
+            link
+          }
         }
       }
     }
@@ -25,21 +44,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <GlobalStyles />
+      <Navbar
+        menuLinks={data.site.siteMetadata.menuLinks}
+        isFilled={props.isFilled}
+      />
+      <Container>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      </Container>
+      <Footer />
     </>
   )
 }
