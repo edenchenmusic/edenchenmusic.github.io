@@ -37,7 +37,7 @@ const MobileTabContainer = styled.div`
   max-height: ${props => props.showMenu ? "30rem" : "0"};
   overflow: hidden;
   transition: max-height 0.5s ease-in;
-  border: 1px solid #a7a7a7;
+  border: ${props => props.showMenu ? "1px solid #d6d6d6" : "none"};
   @media (min-width: ${theme.phone}) {
     left: auto;
     right: 2rem;

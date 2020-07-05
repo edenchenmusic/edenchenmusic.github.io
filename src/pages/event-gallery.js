@@ -18,7 +18,7 @@ const SubText = styled.p`
 `
 const EventGalleryPage = () => (
   <Layout isfilled={true}>
-    <SEO title="Eden Chen | Event Gallery" />
+    <SEO title="Event Gallery" />
     
     <Title text="EVENT GALLERY" />
     <SubText>Click image to view caption.</SubText>
