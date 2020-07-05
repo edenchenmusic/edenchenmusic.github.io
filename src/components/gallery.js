@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { theme } from "../theme/GlobalStyles"
 
@@ -93,8 +93,8 @@ const Gallery = () => {
         />
     ));
 
-    const text = textItems.map((item) => (
-        <Overlay>
+    const text = textItems.map((item, index) => (
+        <Overlay key={index}>
             <Caption>{item}</Caption>
         </Overlay>
     ));
@@ -102,8 +102,8 @@ const Gallery = () => {
     // combine images and text arrays into one and map into <Box/>
     let zip = (a1, a2) => a1.map((x, i) => [x, a2[i]]); 
     const imageAndText = zip(images, text);
-    const overlayedImages = imageAndText.map( (item) => (
-        <Box>
+    const overlayedImages = imageAndText.map( (item, index) => (
+        <Box key={index}>
             {item}
         </Box>
     ));

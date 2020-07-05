@@ -31,6 +31,7 @@ const TextContainer = styled.div`
 `
 
 const Banner = () => {
+
     return (
         <Container>
             <TextContainer>

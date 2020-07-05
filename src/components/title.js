@@ -1,8 +1,6 @@
-import React, {useState} from "react"
+import React from "react"
 import styled from "styled-components"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
-import { theme , GlobalStyles} from "../theme/GlobalStyles"
+import { theme } from "../theme/GlobalStyles"
 
 const Text = styled.div`
     padding-top: 3rem;

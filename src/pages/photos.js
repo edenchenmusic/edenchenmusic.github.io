@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components"
@@ -41,12 +40,12 @@ const PhotosPage = ( { data } ) => {
 
     // add styling to horizontal vs. vertical photos
     const styledImages = images.map((image, index) =>
-        ( (index+1) % 3 !=0 ? <VerticalImg>{image}</VerticalImg> : <HorizontalImg>{image}</HorizontalImg> )
+        ( (index+1) % 3 !==0 ? <VerticalImg>{image}</VerticalImg> : <HorizontalImg>{image}</HorizontalImg> )
     )
 
 
     return (
-        <Layout isFilled={false}>
+        <Layout isfilled={false}>
 
             <SEO title="Photos" /> 
 

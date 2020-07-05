@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { theme } from "../theme/GlobalStyles"
 
@@ -62,7 +62,7 @@ const NewsPreview = () => {
                         childImageSharp {
                             id
                             fluid(maxWidth: 600) {
-                                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                                ...GatsbyImageSharpFluid
                             }
                         }
                     }

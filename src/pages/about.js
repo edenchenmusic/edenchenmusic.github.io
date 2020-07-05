@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import styled from "styled-components"
@@ -50,7 +49,7 @@ const AboutPage = ({ data }) => {
   ));
   
   return (
-    <Layout isFilled={true}>
+    <Layout isfilled={true}>
       <SEO title="About" />
       <Title text="BIOGRAPHY" />
 
