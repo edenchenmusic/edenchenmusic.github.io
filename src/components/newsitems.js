@@ -228,11 +228,11 @@ const NewsItems = () => {
     
     const mediaItem = media.map((item, index) => (
         index === media.length-10+1 ?
-        <VerticalMediaContainer>{item}</VerticalMediaContainer> : 
-        <MediaContainer>{item}</MediaContainer>
+        <VerticalMediaContainer >{item}</VerticalMediaContainer> : 
+        <MediaContainer >{item}</MediaContainer>
     ))
-    const textItem = newstext.map((item) => (
-        <TextContainer>
+    const textItem = newstext.map((item, index) => (
+        <TextContainer key={index}>
             <h3>{item.title}</h3>
             <p>{item.date}</p>
             <p>{item.description}</p>

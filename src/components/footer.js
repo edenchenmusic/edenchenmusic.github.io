@@ -79,10 +79,18 @@ const Footer = () => {
     return (
         <Container>
             <IconContainer>
-                <Icon><a href="mailto:echenmusic@gmail.com"><Email /></a></Icon>
-                <Icon><a href="https://www.instagram.com/edenchenmusic/"><Instagram /></a></Icon>
-                <Icon><a href="https://www.youtube.com/channel/UCPVH3SGoNxpShR5ZjbVc4SQ"><Youtube /></a></Icon>
-                <Icon><a href="https://www.facebook.com/edenchenmusic"><Facebook /></a></Icon>
+                <Icon>
+                    <a href="mailto:echenmusic@gmail.com" aria-label="email"> <Email /> </a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.instagram.com/edenchenmusic/" aria-label="instagram"><Instagram /></a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.youtube.com/channel/UCPVH3SGoNxpShR5ZjbVc4SQ" aria-label="youtube"><Youtube /></a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.facebook.com/edenchenmusic" aria-label="facebook"><Facebook /></a>
+                </Icon>
             </IconContainer>
             <TextContainer>
                 <Text><p>©2018 BY EDEN CHEN MUSIC.</p></Text>

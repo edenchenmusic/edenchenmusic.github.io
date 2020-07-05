@@ -44,8 +44,8 @@ const bio = [
 
 const AboutPage = ({ data }) => {
   
-  const text = bio.map((paragraph) => (
-    <p>{paragraph}</p>
+  const text = bio.map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
   ));
   
   return (

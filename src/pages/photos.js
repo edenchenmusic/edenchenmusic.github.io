@@ -40,7 +40,7 @@ const PhotosPage = ( { data } ) => {
 
     // add styling to horizontal vs. vertical photos
     const styledImages = images.map((image, index) =>
-        ( (index+1) % 3 !==0 ? <VerticalImg>{image}</VerticalImg> : <HorizontalImg>{image}</HorizontalImg> )
+        ( (index+1) % 3 !==0 ? <VerticalImg key={index}>{image}</VerticalImg> : <HorizontalImg key={index}>{image}</HorizontalImg> )
     )
 
 

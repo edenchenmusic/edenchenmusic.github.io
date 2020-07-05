@@ -30,7 +30,7 @@ const MobileTabContainer = styled.div`
   flex-direction: column;
   background-color: #fff;
   position: absolute;
-  top: 110%;
+  top: 4rem;
   left: 8%;
   right: 8%;
   border-radius: 16px;

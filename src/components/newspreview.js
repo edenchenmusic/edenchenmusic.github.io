@@ -84,7 +84,7 @@ const NewsPreview = () => {
     // specity max number of characters in item.description
     const text = newstext.map((item, index) => (
         index < 3 ?
-        <TextContainer>
+        <TextContainer key={index}>
             <h3>{item.title}</h3>
             <p>{item.date}</p>
             <p>
