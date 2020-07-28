@@ -69,4 +69,11 @@ export const GlobalStyles = createGlobalStyle`
         color: #65acb4;
         text-decoration: underline;
     }
+
+    ::selection {
+        background: #c5e3e6; /* WebKit/Blink Browsers */
+      }
+    ::-moz-selection {
+        background: #c5e3e6; /* Gecko Browsers */
+    }
 `;

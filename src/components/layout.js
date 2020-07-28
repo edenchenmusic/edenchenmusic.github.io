@@ -47,7 +47,7 @@ const Layout = (props) => {
       <GlobalStyles />
       <Navbar
         menuLinks={data.site.siteMetadata.menuLinks}
-        isFilled={props.isFilled}
+        isfilled={props.isfilled}
       />
       <Container>
         <main>{children}</main>

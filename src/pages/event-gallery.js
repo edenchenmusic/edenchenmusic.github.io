@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { theme } from "../theme/GlobalStyles"
 
@@ -18,7 +17,7 @@ const SubText = styled.p`
   }
 `
 const EventGalleryPage = () => (
-  <Layout isFilled={true}>
+  <Layout isfilled={true}>
     <SEO title="Event Gallery" />
     
     <Title text="EVENT GALLERY" />

@@ -1,7 +1,5 @@
-import React, {useState} from "react"
+import React from "react"
 import styled from "styled-components"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import { theme } from "../theme/GlobalStyles"
 
 export const Email = () => (
@@ -81,10 +79,18 @@ const Footer = () => {
     return (
         <Container>
             <IconContainer>
-                <Icon><Email /></Icon>
-                <Icon><Instagram /></Icon>
-                <Icon><Youtube /></Icon>
-                <Icon><Facebook /></Icon>
+                <Icon>
+                    <a href="mailto:echenmusic@gmail.com" aria-label="email"> <Email /> </a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.instagram.com/edenchenmusic/" aria-label="instagram"><Instagram /></a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.youtube.com/channel/UCPVH3SGoNxpShR5ZjbVc4SQ" aria-label="youtube"><Youtube /></a>
+                </Icon>
+                <Icon>
+                    <a href="https://www.facebook.com/edenchenmusic" aria-label="facebook"><Facebook /></a>
+                </Icon>
             </IconContainer>
             <TextContainer>
                 <Text><p>©2018 BY EDEN CHEN MUSIC.</p></Text>

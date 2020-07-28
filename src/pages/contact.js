@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import { theme } from "../theme/GlobalStyles"
@@ -64,7 +64,7 @@ const ContactTitle = styled.div`
     }
 `
 const ContactPage = ({ data }) => (
-  <Layout isFilled={true}>
+  <Layout isfilled={true}>
     <SEO title="Contact" />
 
     

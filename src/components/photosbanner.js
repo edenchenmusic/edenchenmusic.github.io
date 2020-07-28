@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { theme, GlobalStyles } from "../theme/GlobalStyles"
+import { theme } from "../theme/GlobalStyles"
 import hero from "../images/about-bg.jpg"
 
 import Title from "../components/title"

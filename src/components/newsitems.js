@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 import { theme } from "../theme/GlobalStyles"
 
@@ -185,7 +185,7 @@ const NewsItems = () => {
                         childImageSharp {
                             id
                             fluid(maxWidth: 600) {
-                                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                                ...GatsbyImageSharpFluid
                             }
                         }
                     }
@@ -206,19 +206,19 @@ const NewsItems = () => {
     
     const shenzhenVideo = (
         <Video>
-            <iframe width="520" height="300" src="https://www.youtube.com/embed/0EFSfgCd0Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="shenzhen" width="520" height="300" src="https://www.youtube.com/embed/0EFSfgCd0Bw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Video>
     )
 
     const grammyVideo = (
         <Video>
-            <iframe width="520" height="300" src="https://www.youtube.com/embed/gB10MchCNsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="grammy" width="520" height="300" src="https://www.youtube.com/embed/gB10MchCNsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Video>
     )
 
     const andermattVideo = (
         <Video>
-         <iframe width="520" height="300" src="https://www.youtube.com/embed/UWX6cghslNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <iframe title="andermatt" width="520" height="300" src="https://www.youtube.com/embed/UWX6cghslNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </Video>
     )
     // ordered from most recent (images[n]) to oldest (images[0])
@@ -228,11 +228,11 @@ const NewsItems = () => {
     
     const mediaItem = media.map((item, index) => (
         index === media.length-10+1 ?
-        <VerticalMediaContainer>{item}</VerticalMediaContainer> : 
-        <MediaContainer>{item}</MediaContainer>
+        <VerticalMediaContainer >{item}</VerticalMediaContainer> : 
+        <MediaContainer >{item}</MediaContainer>
     ))
-    const textItem = newstext.map((item) => (
-        <TextContainer>
+    const textItem = newstext.map((item, index) => (
+        <TextContainer key={index}>
             <h3>{item.title}</h3>
             <p>{item.date}</p>
             <p>{item.description}</p>
