@@ -33,7 +33,7 @@ const TextContainer = styled.div`
 `
 
 const bio = [
-  "Eden Chen, 21, is a Lang Lang International Music Foundation Young Scholar Alum, a Jack Kent Cooke Young Artist, and a junior at The Juilliard School. He was recently featured online by Isabel Leonard, as well as Pianist Magazine. Eden previously studied at Columbia University, participating in its Exchange with The Juilliard School.​"
+  "Eden Chen, 21, is a Lang Lang International Music Foundation Young Scholar Alum, a Jack Kent Cooke Young Artist, and a rising senior at The Juilliard School. He recently received the Gina Bachauer Grant, and was featured online by Isabel Leonard, as well as Pianist Magazine. Eden previously studied political science at Columbia University, participating in its Exchange with The Juilliard School.​"
   ,
   "Eden has performed at Helen Yarmak International for New York Fashion Week. He has recorded with Lang Lang for the Disney film, \"The Nutcracker and the Four Realms\" and Deutsche Grammaphon. Eden has appeared alongside Lang Lang at JBLFest, The City of Shenzhen’s Exposition in New York, and the Swiss Alps Classics series in Andermatt. He performed at the Grammy’s Salute to Classical Concert, playing arrangements of Leonard Bernstein’s music and accompanying distinguished artists such as Ledisi and Kiana Lede, in Carnegie Hall’s Stern Auditorium."
   ,
@@ -41,7 +41,7 @@ const bio = [
   ,
   "​Eden is currently studying with Hung-Kuan Chen. He previously studied with Jerome Lowenthal, Rufus Choi, Ory Shihor, and Elena Makarova. Eden studied two years at the Colburn Academy. He has been mentored by Lang Lang, Daniel Pollack, Seymour Bernstein, Jean-Yves Thibaudet, Alan Chow, Christopher O’Riley, John Perry, and Gary Graffman. Eden has attended the Mozarteum Summer Academy in Salzburg, the Paderewski Piano Academy, the Colburn Academy Piano Festival, the John Perry Academy of Music Summer Festival, the Académie Internationale d’Eté de Nice, and was invited to the First Leeds International Piano Festival, organized by the Leeds International Piano Competition, as well as Music Fest Perugia."
   ,
-  "Eden’s musical experience outside of classical piano includes prepared piano and harpsichord, which he has played with the Colburn Academy Virtuosi Orchestra."
+  "Eden’s musical experience outside of classical piano includes prepared piano and harpsichord, which he has played with the Colburn Academy Virtuosi Orchestra. "
 ]
 
 const AboutPage = ({ data }) => {
